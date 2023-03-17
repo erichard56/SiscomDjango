@@ -1,0 +1,26 @@
+{% extends 'home.html' %}
+
+{% block cuerpo %}
+
+<h1>Tarifas</h1>
+<table class="table table-bordered y-10">
+	<thead>
+	  	<tr>
+			<th scope="col">Destino</th>
+			<th scope="col">Dia</th>
+			<th scope="col">Hora Desde</th>
+			<th scope="col">Hora Hasta</th>
+		</tr>
+	</thead>
+	<tbody>
+		{% for tarifa in detalles %}
+		  	<tr>
+				<th scope="row">{{tarifa.get_destino_display}}</th>
+				<th scope="row">{{tarifa.get_dia_display}}</th>
+				<th scope="row">{{tarifa.horaDesde|date:'H:i'}}</th>
+				<th scope="row">{{tarifa.horaHasta|date:'H:i'}}</th>
+			</tr>
+	  	{% endfor %}
+	</tbody>
+  </table>
+{% endblock %}

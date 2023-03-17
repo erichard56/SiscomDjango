@@ -1,0 +1,24 @@
+{% extends 'home.html' %}
+
+{% block cuerpo %}
+
+<h1>Paradas</h1>
+<table class="table table-bordered y-10">
+	<thead>
+	  	<tr>
+			<th scope="col">Rumbo</th>
+			<th scope="col">Orden</th>
+			<th scope="col">Nombre</th>
+		</tr>
+	</thead>
+	<tbody>
+		{% for parada in detalles %}
+		  	<tr>
+				<th scope="row">{{parada.get_parv_display}}</th>
+				<th scope="row">{{parada.orden}}</th>
+				<th scope="row">{{parada.nombre}}</th>
+			</tr>
+	  	{% endfor %}
+	</tbody>
+  </table>
+{% endblock %}

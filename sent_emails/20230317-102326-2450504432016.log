@@ -1,0 +1,25 @@
+Content-Type: text/plain; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+Subject: Password reset on 127.0.0.1:8000
+From: webmaster@localhost
+To: enrique.richard@gmail.com
+Date: Fri, 17 Mar 2023 13:23:26 -0000
+Message-ID: <167905940606.10968.7585995892775065405@DESKTOP-PRHK4IN.home>
+
+
+You're receiving this email because you requested a password reset for your user account at 127.0.0.1:8000.
+
+Please go to the following page and choose a new password:
+
+http://127.0.0.1:8000/accounts/reset/MQ/bl7bj2-2ec1bbc628867e02eda99de4ee032768/
+
+Your username, in case you’ve forgotten: erichard
+
+Thanks for using our site!
+
+The 127.0.0.1:8000 team
+
+
+
+-------------------------------------------------------------------------------

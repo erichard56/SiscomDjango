@@ -1,0 +1,20 @@
+{% extends 'home.html' %}
+
+{% block cuerpo %}
+
+<h1>Feriados</h1>
+<table class="table table-bordered y-10">
+	<thead>
+	  	<tr>
+			<th scope="col">Fecha</th>
+		</tr>
+	</thead>
+	<tbody>
+		{% for feriado in detalles %}
+		  	<tr>
+				<th scope="row">{{feriado.fecha|date:"d-m-Y"}}</th>
+			</tr>
+	  	{% endfor %}
+	</tbody>
+  </table>
+{% endblock %}

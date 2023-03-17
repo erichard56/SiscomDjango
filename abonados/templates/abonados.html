@@ -1,0 +1,30 @@
+{% extends 'home.html' %}
+
+{% block cuerpo %}
+
+<h1>Abonados</h1>
+<table class="table table-bordered y-10">
+	<thead>
+	  	<tr>
+			<th scope="col">Nro Abonado</th>
+			<th scope="col">Nombre</th>
+			<th scope="col">Direccion</th>
+			<th scope="col">Telefono</th>
+			<th scope="col">Acciones</th>
+		  </tr>
+	</thead>
+	<tbody>
+		{% for abonado in abonados %}
+		  	<tr>
+				<th scope="row">{{abonado.numeroAbonado}}</th>
+				<td>{{abonado.nombre}}</td>
+				<td>{{abonado.direccion}}</td>
+				<td>{{abonado.telefono}}</td>
+				<td>
+					<a href="{% url 'detalles' abonado.id %}">Detalles</a>
+				</td>
+				</tr>
+	  	{% endfor %}
+	</tbody>
+  </table>
+{% endblock %}

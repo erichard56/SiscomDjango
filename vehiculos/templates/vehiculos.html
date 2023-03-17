@@ -1,0 +1,25 @@
+{% extends 'home.html' %}
+
+{% block cuerpo %}
+<h1>Vehiculos</h1>
+<table class="table table-bordered y-10">
+	<thead>
+	  	<tr>
+			<th scope="col">Nombre</th>
+			<th scope="col">Asientos</th>
+			<th scope="col">Estado</th>
+		  </tr>
+	</thead>
+	<tbody>
+		{% for vehiculo in vehiculos %}
+		  	<tr>
+				<th scope="row">{{vehiculo.nombre}}</th>
+				<td>{{vehiculo.asientos}}</td>
+				<td>{{vehiculo.get_estado_display}}</td>
+			</tr>
+	  	{% endfor %}
+	</tbody>
+  </table>
+
+{% endblock %}
+

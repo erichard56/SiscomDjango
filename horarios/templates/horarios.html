@@ -1,0 +1,24 @@
+{% extends 'home.html' %}
+
+{% block cuerpo %}
+
+<h1>Horarios</h1>
+<table class="table table-bordered y-10">
+	<thead>
+	  	<tr>
+			<th scope="col">Destino</th>
+			<th scope="col">Dia</th>
+			<th scope="col">Hora</th>
+		</tr>
+	</thead>
+	<tbody>
+		{% for horario in detalles %}
+		  	<tr>
+				<td scope="row">{{horario.get_destino_display}}</td>
+				<td scope="row">{{horario.get_dia_display}}</td>
+				<td scope="row">{{horario.hora|date:'H:i'}}</td>
+			</tr>
+	  	{% endfor %}
+	</tbody>
+  </table>
+{% endblock %}
