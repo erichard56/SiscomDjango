@@ -25,7 +25,6 @@ Codigo Postal: {{detalles.0.0.codigoPostal}} <br>
 	</thead>
 	<tbody>
 		{% for abono in detalles.1 %}
-		{{ abono }}
 		  	<tr>
 				<td>{{abono.fechaDesde|date:"d-m-Y"}}</td>
 				<td>{{abono.fechaHasta|date:"d-m-Y"}}</td>
@@ -49,7 +48,7 @@ Codigo Postal: {{detalles.0.0.codigoPostal}} <br>
 		{% for abonadodia in detalles.2 %}
 		{{ abono }}
 		  	<tr>
-				<th>{{abonadodia.get_destino_display}}</th>
+				<td>{{abonadodia.get_destino_display}}</td>
 				<td>{{abonadodia.get_dia_display}}</td>
 				<td>{{abonadodia.hora|date:'H:i'}}</td>
 			</tr>

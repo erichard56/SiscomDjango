@@ -15,10 +15,10 @@
 	<tbody>
 		{% for tarifa in detalles %}
 		  	<tr>
-				<th scope="row">{{tarifa.get_destino_display}}</th>
-				<th scope="row">{{tarifa.get_dia_display}}</th>
-				<th scope="row">{{tarifa.horaDesde|date:'H:i'}}</th>
-				<th scope="row">{{tarifa.horaHasta|date:'H:i'}}</th>
+				<td scope="row">{{tarifa.get_destino_display}}</td>
+				<td scope="row">{{tarifa.get_dia_display}}</td>
+				<td scope="row">{{tarifa.horaDesde|date:'H:i'}}</td>
+				<td scope="row">{{tarifa.horaHasta|date:'H:i'}}</td>
 			</tr>
 	  	{% endfor %}
 	</tbody>
